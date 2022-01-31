@@ -27,6 +27,7 @@ async def dm_all(ctx, *, args=None):
 
 @client.command()
 async def ping(ctx):
+    await ctx.reply("Pong!")
 
 keep_alive.keep_alive()
 client.run(os.getenv("TOKEN"))
